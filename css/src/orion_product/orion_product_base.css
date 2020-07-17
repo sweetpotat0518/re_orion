@@ -1,0 +1,657 @@
+/* orion_product_base.css */
+
+#wrap {
+  width: 100%; height: 100%;
+}
+
+/* wrap-------------------------------------- */
+
+
+
+#headBox {
+  position: fixed; z-index:1000;
+  width: 100%; height: 90px;
+  padding: 20px 20px 0; box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0.2rem 0.2rem 0.2rem #111;
+  
+}
+
+
+
+h1 {
+  float: left;
+  width: 180px; height: 50px;
+  margin-top: 10px;
+}
+h1 a {
+  display: block;
+  width: 100%; height: 100%;
+  background-image: url('../../../img/logo-1.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+/* gnb --------------------------- */
+.gnbBox {
+  float: left;
+  width: 70%; height: 100%;
+}
+
+.gnb_area {
+  width: 100%; height: 100%;
+}
+
+
+.gnb_area > li {
+  float: left;
+  width: 20%; height: auto;
+}
+.gnb_area > li dl {
+  width: 100%; height:auto;
+}
+.gnb_area > li dl dt {
+  width: 100%; height: 70px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 5rem;
+  cursor: pointer;
+}
+
+.gnb_area > li dl dt a {
+  display: block;
+  width: 100%; height: 100%;
+  color:#111;
+}
+.gnb_area > li dl dt a:hover{color:#D81425;}
+
+.gnb_area > li dl dt:focus {
+  border-bottom: 4px solid #a30;
+  font-weight: bold;
+}
+
+/* =================================== */
+.container-example {
+  position: relative;
+}
+
+.strip {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.gnb_area > li dl dt a,
+.unb_area > li dl dt a {
+  position: relative;
+}
+
+.gnb_area > li dl dt a::before, .gnb_area > li dl dt a::after,
+.unb_area > li dl dt a::before, .unb_area > li dl dt a::after {
+  content:'';
+  position: absolute;
+  height: 100%;
+  margin: auto;
+  bottom: 10px;
+}
+
+.gnb_area > li dl dt a::after,
+.unb_area > li dl dt a::after {
+  border-top: 2px solid #D81425;
+  border-bottom: 2px solid #D81425;
+  width: 0;
+  top: 0;
+  left: 50%;
+  bottom: 10px;
+  transition: all 500ms ease;
+}
+.gnb_area > li dl dt a:hover::before,
+.unb_area > li dl dt a:hover::before {
+  height: 0;
+  /* top: 10%; */
+}
+.gnb_area > li dl dt a:hover::after,
+.unb_area > li dl dt a:hover::after {
+  width: calc(100%);
+  left: 00;
+  bottom: 10px;
+}
+
+
+
+/* ===================================== */
+
+
+.gnb_area > li dl dd {
+  /* display: none; */
+  width: 100%; height: auto;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: #fff;
+  /* padding: 1rem 0; */
+}
+
+.gnb_sub {
+  width: 100%; height: auto;
+}
+.gnb_sub > li {
+  width: 100%; height: auto;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.gnb_sub li a {
+  display: block;
+  width: 100%; height: 100%;
+  padding: 0.5rem 0;
+  color: #111;
+}
+.gnb_sub li a:hover,
+.gnb_sub li a:focus {
+  color:#D81425;
+  font-weight: bold;
+}
+
+.gnb_area dt.action a {
+  color:#111; 
+  font-weight: bold;
+}
+/* 수정!!!!!!!!!!!!!-------- */
+.gnb_area dd  li.action a{
+  color:#D81425;
+  font-weight: bold;
+}
+
+/* unb --------------------------- */
+.unbBox {
+  float: right;
+  width: 10%; height: 100%;
+}
+
+.unb_area {
+  width: 100%; height: 100%;
+}
+
+.unb_area > li {
+  float: left;
+  width: 50%; height: 100%;
+  padding: 10px 0 0; box-sizing: border-box;
+}
+.unb_area > li dl {
+  width: 100%; height: 100%;
+}
+.unb_area > li dl dt {
+  width: 100%; height: 100%;
+  text-align: center;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 80%;
+}
+/* .unb_area > li dl dt:focus {
+  border-bottom: 4px solid #a30;
+  font-weight: bold;
+} */
+
+.unb_area > li dl dt a {
+  display: block;
+  width: 100%; height: 100%;
+}
+
+.unb_area > li dl dd {
+  float: right;
+  width: 200%; height: auto;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 1rem 0;
+  background-color:#909092;
+}
+
+.unb_sub {
+  width: 100%; height: auto;
+}
+.unb_sub > li {
+  width: 100%; height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.login_link{
+  text-align: center;
+}
+
+.language_link {
+  text-align: center;
+}
+
+.unb_sub a {
+  display: block;
+  width: 100%; height: auto;
+  padding: 0.5rem 0;
+  color: #111;
+}
+
+.unb_sub li a:hover,
+.unb_sub li a:focus {
+  color:#D81425;
+  font-weight: bold;
+}
+
+.unb_area > li dl dt a {
+  display: block;
+  width: 100%; height: 100%;
+  padding: 15px; box-sizing: border-box;
+}
+
+.login i,
+.language i {
+  font-size: 1.5rem;
+  color:#111;
+}
+.login i:hover,
+.language i:hover {
+  color:#D81425;
+}
+
+
+/* // #headBox----------------------------------- */
+
+
+/* #top_img ------------------------------------- */
+#top_img {
+  width: 100%; height: 300px;
+  background-color: #fff;
+  background-image: url('../../../img/orion_product/view/titMovie_6.png');
+  background-repeat: no-repeat;
+  background-position: 50% 70%;
+}
+/* // #top_img ------------------------------------- */
+
+
+
+/* #menuBox---------------------------------- */
+#menuBox {
+  width: 100%; height: 200px; max-width: 1024px;
+  margin:auto;
+}
+
+.main_menu {
+  width: 100%; height: 75%;
+  padding: 3% 0; box-sizing: border-box;
+}
+
+.main_menu ul {
+  width: 70%; height: 100%;
+  margin: auto;
+}
+
+.main_menu li {
+  float:left;
+  width: 13%; height: 100%;
+  margin-left: 1.5%;
+  border-radius: 100%;
+  border:2px solid #909092;
+  box-sizing: border-box;
+}
+
+.main_menu li:first-child {
+  margin-left: 0;
+}
+
+.main_menu li:hover{
+  background-color: #d81425;
+  border:2px solid #fff; 
+}
+.main_menu li:hover p {
+  color:#d81425
+}
+
+.main_menu li a {
+  display: block;
+  width:100%; height:100%;  
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 60%;
+}
+
+.main_menu li p {
+  float:left;
+  width: 100%; height:auto;
+  margin-top: 5%;
+  padding-top: 100%;
+  text-align: center;
+}
+
+.p_all {background-image: url('../../../img/icon/product/all.png'); background-size: 60%;}
+.p_all:hover {background-image: url('../../../img/icon/product/all-white.png'); background-size: 70%;}
+.pie {background-image: url('../../../img/icon/product/pie.png');}
+.pie:hover {background-image: url('../../../img/icon/product/pie-white.png');}
+.snack {background-image: url('../../../img/icon/product/snack.png');}
+.snack:hover {background-image: url('../../../img/icon/product/snack-white.png');}
+.biscuit {background-image: url('../../../img/icon/product/biscuit.png');}
+.biscuit:hover {background-image: url('../../../img/icon/product/biscuit-white.png');}
+.gum {background-image: url('../../../img/icon/product/gum.png');}
+.gum:hover {background-image: url('../../../img/icon/product/gum-white.png');}
+.candy {background-image: url('../../../img/icon/product/candy.png');}
+.candy:hover {background-image: url('../../../img/icon/product/candy-white.png');}
+.chocolate {background-image: url('../../../img/icon/product/choclate.png');}
+.chocolate:hover {background-image: url('../../../img/icon/product/choclate-white.png');}
+/* // #menuBox-------------------------------- */
+
+
+
+
+
+/* #productBox------------------------------ */
+
+#productBox {
+  width: 100%; height: auto;
+  padding: 0 2%; box-sizing: border-box;
+  background-color: #fff;
+}
+
+.product {
+  width: 100%; height: auto;
+  background-color: #fff;
+}
+.product.active {display: block;}
+
+.product li {
+  float:left;
+  width: 25%; height: 250px; height: 24.414063vw;
+  border:1px solid #ddd; box-sizing: border-box;
+  background-color: #fff;
+}
+
+
+.product_all li:nth-child(1) {
+  width: 50%; height: 500px; height: 48.818125vw;
+  border:1px solid #ddd; box-sizing: border-box;
+  /* background-image: linear-gradient(80deg,#D81425, #fff); */
+}
+.product_all li:nth-child(1):hover p {
+  color:#D81425;
+}
+.product_all li:nth-child(1):hover em {
+  color:#111;
+}
+
+.product_all li:nth-child(20) {
+  width: 50%; height: 250px; height: 24.414063vw;
+  padding: 2%; box-sizing: border-box;
+  border:1px solid #ddd; box-sizing: border-box;
+  /* background-image: linear-gradient(80deg,#4858e0, #fff); */
+}
+.product_all li:nth-child(20):hover p {
+  color:#D81425;
+}
+.product_all li:nth-child(20):hover em {
+  color:#111;
+}
+
+.product li:last-child {
+  margin-bottom: 100px;
+}
+
+.product li a {
+  display: block;
+  width: 100%; height: 100%;
+}
+
+.product li:hover p {
+  color:#D81425;
+}
+
+.product li:hover em {
+  color:#111;
+}
+/* .product li a:hover {
+  background-size: 60%;
+  transition: all 500ms linear;
+} */
+
+
+/* .product li div {
+  width: 100%; height: 50%;
+  padding: 10% 0;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 50%; 
+} */
+
+/* .img_em {
+  display: block;
+  width: 100%; height: auto;
+  padding:0 5%; box-sizing:border-box;
+  font-size: 0.8rem;
+  color:#909092;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+} */
+
+/* .product li p {
+  display: block;
+  width: 100%; height: auto;
+  margin: 5% 0;
+  text-align: center;
+  color:#111;
+  font-size: 1.5rem;
+} */
+
+/* // #productBox------------------------------ */
+
+/* 더보기 버튼------------------------------ */
+
+.more_btn {
+  width:100%; height:auto;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.more_btn button {
+  width: 20%; height: auto;
+  background-color:#fff;
+  padding:1rem 2rem;
+  font-size: 1rem;
+  font-weight:bold; color:#909092;
+  border:2px solid #909092;
+  border-radius:0.5rem;
+}
+
+
+
+
+/* 모달 윈도우 =================================== */
+.big_modal{
+  display: none;
+  position: fixed; top: 0; left: 0; z-index: 1500;
+  width: 100%; height: 100%;
+}
+.big_img{
+  position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto;
+  width: 90%; height: 80%;
+  border: 1rem solid #fff;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 0.2rem;
+}
+.me_info{float:right; width: 40%; height: 100%; padding-top: 1rem; box-sizing: border-box;text-align: center; font-size: 0.8rem;}
+.me_info p:first-of-type{font-weight: bold; font-size: 2rem;}
+.me_info p:last-of-type{padding:8% 10%; font-size:0.7rem;}
+.me_img{float:left; width: 60%; height: 100%; margin: auto;}
+
+.close_btn{
+  position: absolute; right: -4%; top: -8%;
+  width: 3rem; height: 3rem;
+  border: 0.3rem solid #111;
+  box-sizing: border-box;
+  /* background-color: #333; */
+  /* box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.8); */
+  border-radius: 100%;
+}
+.close_btn>button{
+  position: relative;
+  display: block;
+  width: 100%; height: 100%; border-radius: 100%;
+}
+.close_btn>button:before,
+.close_btn>button:after{
+  content: " "; display: block; position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0; margin: auto;
+  width: 70%; height: 4px; background-color: #111;
+  /* box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.8); */
+  border-radius: 2px;
+  transition: transform 500ms ease;
+}
+.close_btn>button:before{
+  transform: rotate(45deg);
+}
+.close_btn>button:after{
+  transform: rotate(-45deg);
+}
+.close_btn>button:hover:before,
+.close_btn>button:focus:before{
+  transform: rotate(180deg) translateY(-10px);
+}
+.close_btn>button:hover:after,
+.close_btn>button:focus:after{
+  transform: rotate(180deg) translateY(10px);
+}
+.big_bg{
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* =================================== */
+
+
+
+
+
+/* footBox---------------------------------------- */
+/*
+#footBox {
+  width: 100%; height: 450px;
+  padding: 5%; box-sizing: border-box;
+  background-color: #fff;
+}
+
+.footer_top {
+  position: relative;
+  width: 100%; height: 50%;
+  border-bottom: 1px solid #111;
+}
+.fnb {
+  width: 60%; height: auto;
+}
+.footer_link {
+  width: 100%; height: auto;
+}
+.footer_link li {
+  float: left;
+  width: 33%; height: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.address {
+  float: left;
+  width: 100%; height: auto;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+*/
+/* 패밀리 사이트----------------------------------------- */
+/*
+.family_site {
+  position: absolute; right: 0; top: 5%;
+  width: 30%; height: 40px;
+  border:2px solid #909092;
+  border-radius: 1rem;
+  background-color: #fff;
+}
+.family_site.action {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.family_site a {
+  display: block;
+  width: 100%; height: 100%;
+  padding: 10px; box-sizing: border-box;
+}
+.family_site span {
+  font-weight: bold;
+}
+
+.family_site ul {
+  width: 100%; height: auto;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border:2px solid #909092;
+  border-top: 0;
+  background-color: #fff;
+}
+
+.family_site li {
+  width: 100%; height: 40px;
+}
+*/
+/* logo sns------------------------------------------------- */
+
+/*
+.footer_bottom {
+  position: relative;
+  width: 100%; height: 50%;
+}
+
+.logoBox {
+  float: left;
+  width: 50%; height: 100%;
+}
+.footer_logo {
+  float: left;
+  width: 180px; height: 50px;
+  margin-top: 5%;
+  background-image: url('../../../img/logo.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+
+
+.snsBox {
+  float: right;
+  width: 30%; height: 70px;
+  margin-top: 3%;
+}
+
+.snsBox li {
+  float: left;
+  width: 24%; height: 100%;
+  margin-left: 1%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 60%;
+}
+
+.snsBox li:hover {
+  background-size: 70%;
+  transition: all 500ms linear;
+}
+
+.facebook {background-image:url('../../../img/icon/Untitled-1.png')}
+.instagram {background-image:url('../../../img/icon/glyph-icons2.png')}
+.youtube {background-image:url('../../../img/icon/yt_logo_rgb_light.png')}
+.naverblog {background-image:url('../../../img/icon/naver.jpg')}
+
+.snsBox li a {
+  display: block;
+  width: 100%; height: 100%;
+}
+*/
+
+/* // #footBox--------------------------------------- */

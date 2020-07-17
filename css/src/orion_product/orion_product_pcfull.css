@@ -1,0 +1,268 @@
+/* orion_product_pcfull.css */
+
+@media screen and (min-width: 1920px){
+  /* design data : 1920px */
+  
+  #headBox > button {display: none;}
+
+  /* #productBox----------------------------- */
+  #productBox {
+    max-width: 1440px;
+    margin: auto;
+  }
+
+  .img {
+    width: 100%; height: 50%;
+    padding: 10% 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 50%;
+  }
+
+  .zoom .img {
+    background-size: 60%;
+    transition: all 500ms ease;
+  }
+
+  .product_all li:first-child .img {
+    width: 100%; height: 50%;
+    padding: 10% 0;
+    background-size: 100%;
+  }
+  .product_all li:first-child.zoom .img {
+    background-size: 110%;
+    transition:all 500ms ease;
+  }
+  
+  
+
+  .product_all li:nth-child(20) .img {
+    float:left;
+    width: 60%; height: 100%;
+    padding: 1%; box-sizing: border-box;
+    background-size: 70%;
+  }
+  .product_all li:nth-child(20).zoom .img {
+    background-size: 80%;
+    transition:all 500ms ease;
+  }
+  
+   
+  
+
+  .all_em,
+  .pie_em,
+  .snack_em,
+  .biscuit_em,
+  .gum_em,
+  .candy_em,
+  .chocolate_em {
+    display: block;
+    width: 100%; height: auto;
+    padding:0 5%; box-sizing:border-box;
+    font-size: 1.5rem;
+    color:#909092;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .product_all li:first-child em {
+    display: block;
+    width: 100%; height: auto;
+    padding:5%; box-sizing:border-box;
+    color:#909092;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .product_all li:nth-child(20) em {
+    float:right;
+    display: block;
+    width: 40%; height: auto;
+    margin:8% 0;
+    padding:5%; box-sizing:border-box;
+    color:#909092;
+    font-size: 1.5rem;
+    text-align: center;
+    overflow: unset;
+    white-space: pre-wrap;
+  }
+
+
+  .all_p,
+  .product_pie p,
+  .product_snack p,
+  .product_biscuit p,
+  .product_gum p,
+  .product_candy p,
+  .product_chocolate p{
+    display: block;
+    width: 100%; height: auto;
+    margin: 5% 0;
+    text-align: center;
+    color:#111;
+    font-size: 1.8rem;
+  }
+  .product_all li:first-child p {
+    display: block;
+    width: 100%; height: auto;
+    margin: 0;
+    text-align: center;
+    color:#111;
+    font-size: 2.8rem;
+  }
+  .product_all li:nth-child(20) p {
+    float:right;
+    display: block;
+    width: 40%; height: auto;
+    margin:5% 0;
+    text-align: center;
+    color:#111;
+    font-size: 2.5rem;
+    margin: 0;
+  }
+
+
+  .me_info{float:right; width: 40%; height: 100%; padding-top: 2rem; box-sizing: border-box;text-align: center; font-size: 1.5rem;}
+  .me_info p:first-of-type{font-weight: bold; font-size: 2.2rem;}
+  .me_info p:last-of-type{padding:8% 10%; font-size:1.2rem;}
+  .me_img{float:left; width: 60%; height: 100%; margin: auto;}
+
+ 
+  /* // #productBox----------------------------- */
+
+
+
+  /* footBox---------------------------------------- */
+#footBox {
+  width: 100%; height: 450px;
+  padding: 5%; box-sizing: border-box;
+  background-color: #fff;
+}
+
+.footer_top {
+  position: relative;
+  width: 100%; height: 50%;
+  border-bottom: 1px solid #111;
+}
+.fnb {
+  width: 60%; height: auto;
+}
+.footer_link {
+  width: 100%; height: auto;
+}
+.footer_link li {
+  float: left;
+  width: 33%; height: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  /* border-bottom: 1px solid #111; */
+  /* background-color: #fff; */
+  /* text-align: center; */
+}
+.address {
+  float: left;
+  width: 100%; height: auto;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+/* 패밀리 사이트----------------------------------------- */
+.family_site {
+  position: absolute; right: 0; top: 5%;
+  width: 30%; height: 40px;
+  border:2px solid #909092;
+  border-radius: 1rem;
+  /* box-sizing: border-box; */
+  background-color: #fff;
+}
+.family_site.action {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.family_site a {
+  display: block;
+  width: 100%; height: 100%;
+  padding: 10px; box-sizing: border-box;
+}
+.family_site span {
+  font-weight: bold;
+}
+
+.family_site ul {
+  width: 100%; height: auto;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border:2px solid #909092;
+  border-top: 0;
+  /* box-sizing: border-box; */
+  background-color: #fff;
+}
+
+.family_site li {
+  width: 100%; height: 40px;
+  /* padding: 10px; box-sizing: border-box; */
+  /* border:2px solid #909092; */
+  /* background-color: #fff; */
+}
+/* logo sns------------------------------------------------- */
+
+.footer_bottom {
+  position: relative;
+  width: 100%; height: 50%;
+}
+
+.logoBox {
+  float: left;
+  width: 50%; height: 100%;
+}
+.footer_logo {
+  float: left;
+  width: 180px; height: 50px;
+  margin-top: 5%;
+  /* background-color: #fff; */
+  background-image: url('../../../img/logo.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.footer_bottom p {
+  position: absolute; left: 2%; top: 50%;
+  /* float: left; */
+  width: 50%; height: auto;
+  margin: auto;
+  font-size: 0.6rem;
+}
+
+.snsBox {
+  float: right;
+  width: 30%; height: 70px;
+  margin-top: 3%;
+  /* background-color: #115; */
+}
+
+.snsBox li {
+  float: left;
+  width: 24%; height: 100%;
+  margin-left: 1%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 60%;
+}
+
+.snsBox li:hover {
+  background-size: 70%;
+  transition: all 500ms linear;
+}
+
+.facebook {background-image:url('../../../img/icon/Untitled-1.png')}
+.instagram {background-image:url('../../../img/icon/glyph-icons2.png')}
+.youtube {background-image:url('../../../img/icon/yt_logo_rgb_light.png')}
+.naverblog {background-image:url('../../../img/icon/naver.jpg')}
+
+.snsBox li a {
+  display: block;
+  width: 100%; height: 100%;
+}
+
+}
